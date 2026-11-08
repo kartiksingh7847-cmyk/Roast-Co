@@ -8,7 +8,7 @@ coffees.forEach((drinks) => {
         <div class="product-detail">
           <p class="product-name">${drinks.name}</p>
           <div class="rating">
-            <img class="rating-img" src="/images/ratings/rating-${drinks.rating}.png">
+            <img class="rating-img" src="images/ratings/rating-${drinks.rating}.png">
             <p class="rating-num">${drinks.count}</p>
           </div>
           <p class="product-price">₹${drinks.price}</p>
@@ -17,7 +17,7 @@ coffees.forEach((drinks) => {
           <option value="2">2</option>
           <option value="3">3</option>
           </select>
-          <p class="added" data-product-id="${drinks.id}">${`<img class="checkmark" src="/images/checkmark.png">`}Added</p>
+          <p class="added" data-product-id="${drinks.id}">${`<img class="checkmark" src="images/checkmark.png">`}Added</p>
           <button class="add" data-product-id="${drinks.id}">Add</button>
         </div>
       </div>`

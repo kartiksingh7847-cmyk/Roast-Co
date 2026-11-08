@@ -1,0 +1,55 @@
+:root {
+  --color-coffee: #6b352a;
+  --color-espresso: #2b1a15;
+  --color-mocha: #8b5e3c;
+  --color-caramel: #c68b59;
+  --color-porcelain: #fffcf4;
+  --color-latte: #f3e5d0;
+  --color-cream-soda: #ffd6a5;
+  --color-cappuccino: #e4c7a1;
+  --color-text-primary: #2b1a15;
+  --color-text-secondary: #79665a;
+  --color-text-light: #fffcf4;
+  --color-border: #d9c5b2;
+  --color-hover: #51281f;
+  --color-accent: #ffb7a5;
+  --color-success: #386641;
+  --color-clay-brown: #6b352a;
+  --color-soft-butter: #fff1a6;
+  --color-mist-gray: #f0f2f5;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+main{
+  padding-top: 88px;
+}
+body{
+  background: linear-gradient(135deg,white,var(--color-caramel));
+}
+html{
+  scroll-behavior: smooth;
+}
+.scroll-top{
+  position: fixed;
+  bottom: 0;
+  right: 25px;
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+.show{
+  pointer-events: auto;
+  opacity: 1;
+   position: fixed;
+   right: 10px; 
+   bottom: 20px;
+   text-decoration: none;
+   color: var(--color-mist-gray);
+   background-color: var(--color-coffee);
+   padding: 0 12px;
+   font-size: 1.8rem;
+   border-radius: 50%;
+}

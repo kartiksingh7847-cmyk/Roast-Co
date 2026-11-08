@@ -1,0 +1,126 @@
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 88px);
+  flex: 1;
+}
+.order-page {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  gap: 24px;
+  margin: 0 20px;
+}
+.heading-text {
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 3rem);
+  margin-bottom: 20px;
+}
+.order-summary-grid{
+  width: 800px;
+}
+.order-summary {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--color-espresso);
+  padding: 12px;
+  background-color: var(--color-coffee);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+.order-img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.order-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.remove {
+  border: none;
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.remove:hover {
+  color: rgb(189, 6, 6);
+}
+.remove:active {
+  transform: scale(0.97);
+}
+.change-quantity {
+  width: 50px;
+  border: none;
+  font-size: 1rem;
+  padding: 3px;
+  border-radius: 8px;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid var(--color-espresso);
+}
+.payment-summary {
+  align-self: self-start;
+  background-color: var(--color-mist-gray);
+  border-radius: 8px;
+  width: 400px;
+  height: 330px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: 2px solid var(--color-espresso);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8);
+}
+@media(max-width:1290px){
+  .payment-summary{
+    width: 776px;
+  }
+}
+.order-summary-text {
+  font-size: 2rem;
+}
+.payment-summary div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+hr {
+  border: none;
+  height: 2px;
+  margin: 10px 0;
+  background-color: black;
+}
+.after-tax {
+  font-size: 1.6rem;
+  color: rgb(143, 5, 5);
+}
+.place-order {
+  border: none;
+  padding: 8px;
+  font-size: 1.4rem;
+  background-color: var(--color-espresso);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 30px;
+  border: 2px solid var(--color-coffee);
+}
+.place-order:hover{
+  transform: scale(1.01);
+  background-color: var(--color-caramel);
+}
+.place-order:active{
+  transform: scale(0.99);
+}
